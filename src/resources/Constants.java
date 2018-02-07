@@ -22,4 +22,12 @@ public class Constants {
     public static final Dimension SIZE_MEDIUM = new Dimension(450, 300);
     public static final Dimension SIZE_LARGE = new Dimension(650, 450);
     public static final Dimension SIZE_X_LARGE = new Dimension(900, 750);
+
+    // Database Connection
+    public static final String DB_SERVER = "***************";
+    public static final String DATABASE = "*************";
+    public static final String DB_USERNAME = "******************";
+    public static final String DB_PASSWORD = "******************";
+    public static final String DB_CONNECTION = "jdbc:jtds:sqlserver://"
+            + DB_SERVER + "/" + DATABASE + ";user=" + DB_USERNAME + ";password=" + DB_PASSWORD;
 }

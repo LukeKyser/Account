@@ -4,6 +4,8 @@ import userAccount.UserAccount;
 
 import java.sql.*;
 
+import static resources.Constants.DB_CONNECTION;
+
 /**
  * @author Luke Kyser
  * @version 2017.11.30
@@ -12,13 +14,6 @@ import java.sql.*;
  * -
  */
 public class UserDatabase {
-    // Final Database Strings
-    private static final String DB_SERVER = "localhost";
-    private static final String DATABASE = "UserDB";
-    private static final String DB_USERNAME = "javadb";
-    private static final String DB_PASSWORD = "javadb";
-    private static final String DB_CONNECTION = "jdbc:jtds:sqlserver://"
-            + DB_SERVER + "/" + DATABASE + ";user=" + DB_USERNAME + ";password=" + DB_PASSWORD;
     // Private variables
     private Connection mConnection = null;
 
